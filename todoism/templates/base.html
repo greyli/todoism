@@ -1,0 +1,45 @@
+<nav class="green lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="#intro" class="brand-logo">Todoism</a>
+        <a data-target="nav-mobile" class="sidenav-trigger button"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            {% if current_user.is_authenticated %}
+                <li>
+                    <a class="waves-effect waves-light btn orange" href="#app">{{ current_user.username }}
+                        <span class="badge new" id="active-count-nav">{{ active_items }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" id="logout-btn" data-href="{{ url_for('auth.logout') }}">
+                        <i class="material-icons">power_settings_new</i>
+                    </a>
+                </li>
+            {% else %}
+                <li><a class="waves-effect waves-light btn red" href="#login">Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<ul id="nav-mobile" class="sidenav">
+    {% if current_user.is_authenticated %}
+        <li><a class="waves-effect waves-light btn red clear-btn sidenav-close">Clear</a></li>
+        <li><a class="waves-effect waves-light btn orange sidenav-close" id="app-btn"
+               href="#app">{{ current_user.username }}</a>
+        </li>
+        <li><a class="waves-effect waves-light btn grey sidenav-close" id="logout-btn"
+               data-href="{{ url_for('auth.logout') }}">Logout</a></li>
+    {% else %}
+        <li><a class="waves-effect waves-light btn red sidenav-close" href="#login">Login</a></li>
+    {% endif %}
+</ul>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer class="center">
+    <small> &copy; 2018 <a class="blue-text link" href="http://greyli.com" title="Written by Grey Li">Grey Li</a> -
+        <a class="blue-text link" href="https://github.com/greyli/todoism" title="Fork me on GitHub">GitHub</a> -
+        <a class="blue-text link" href="http://helloflask.com" title="A HelloFlask project">HelloFlask</a>
+    </small>
+</footer>

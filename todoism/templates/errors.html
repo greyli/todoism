@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <title>Error {{ code }} - Todoism</title>
+    <link href="{{ url_for('static', filename='css/materialize.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+<main>
+    <header class="center">
+        <h4 class="red-text">Todoism</h4>
+    </header>
+    <div class="row card-panel hoverable">
+        <span class="col s10">
+            <span class="active-item">{{ code }} - {{ info }}</span>
+        </span>
+        <span class="col s2">
+            <a class="button right" href="{{ url_for('home.index') }}">Back Home</a>
+        </span>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="center">
+        <h2 class="teal-text text-lighten-2">Todoism</h2>
+        <h5 class="light">We are todoist, we use todoism.</h5>
+        <div class="row center-block">
+            <div class="fake-browser-ui hoverable card-panel">
+                <div class="frame">
+                    <span class="red"></span>
+                    <span class="blue"></span>
+                    <span class="orange"></span>
+                </div>
+                <img class="responsive-img" src="{{ url_for('static', filename='demo.png') }}">
+            </div>
+        </div>
+        <div class="row">
+            <a href="#login" class="btn waves-effect waves-light red">Get Started</a>
+        </div>
+    </div>
+{% endblock %}

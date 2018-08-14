@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header class="row">
+        <input id="item-input" data-href="{{ url_for('.new_item') }}"
+               type="text" placeholder="What needs to be done?" autocomplete="off" autofocus required>
+    </header>
+    <div class="row" id="dashboard">
+        <div class="col l9 m12 s12">
+            <ul class="tabs">
+                <li class="tab col m4 s12">
+                    <a class="blue-text button" id="all-item">All <span class="grey-text small-text" id="all-count">{{ all_count }}</span>
+                    </a>
+                </li>
+                <li class="tab col m4 s12">
+                    <a class="blue-text button" id="active-item">Active <span class="grey-text small-text" id="active-count">{{ active_count }}</span>
+                    </a>
+                </li>
+                <li class="tab col m4 s12">
+                    <a class="blue-text button" id="completed-item">Done <span class="grey-text small-text"
+                                              id="completed-count">{{ completed_count }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col l3 hide-on-med-and-down">
+            <a class="waves-effect waves-light btn red right" id="clear-btn">
+                <i class="material-icons left">clear_all</i>Clear
+            </a>
+        </div>
+    </div>
+
+    <div class="items">
+        {% for item in items %}
+            {% include '_item.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}
