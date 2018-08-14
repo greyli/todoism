@@ -15,8 +15,13 @@
                     </a>
                 </li>
             {% else %}
-                <li><a class="waves-effect waves-light btn red" href="#login">Login</a></li>
+                <li><a class="waves-effect waves-light btn red" href="#login">{{ _('Login') }}</a></li>
             {% endif %}
+            <li>
+                <a class="waves-effect waves-light dropdown-trigger" id="locale-dropdown-btn" data-target="locale-dropdown">
+                    <i class="material-icons">language</i>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -28,10 +33,15 @@
                href="#app">{{ current_user.username }}</a>
         </li>
         <li><a class="waves-effect waves-light btn grey sidenav-close" id="logout-btn"
-               data-href="{{ url_for('auth.logout') }}">Logout</a></li>
+               data-href="{{ url_for('auth.logout') }}">{{ _('Logout') }}</a></li>
     {% else %}
-        <li><a class="waves-effect waves-light btn red sidenav-close" href="#login">Login</a></li>
+        <li><a class="waves-effect waves-light btn red sidenav-close" href="#login">{{ _('Login') }}</a></li>
     {% endif %}
+</ul>
+
+<ul id="locale-dropdown" class="dropdown-content">
+    <li><a class="lang-btn" data-href="{{ url_for('home.set_locale', locale='zh_Hans_CN') }}">简体中文</a></li>
+    <li><a class="lang-btn" data-href="{{ url_for('home.set_locale', locale='en_US') }}">English</a></li>
 </ul>
 
 <main>

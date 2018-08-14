@@ -338,7 +338,7 @@ $(document).ready(function () {
             type: 'GET',
             url: logout_url,
             success: function (data) {
-                window.location.hash = "#intro";
+                window.location.hash = '#intro';
                 activeM();
                 M.toast({html: data.message});
             }
@@ -387,6 +387,18 @@ $(document).ready(function () {
                 }).remove();
                 M.toast({html: data.message, classes: 'rounded'});
                 refresh_count();
+            }
+        });
+    });
+
+    $(document).on('click', '.lang-btn', function () {
+        $.ajax({
+            type: 'GET',
+            url: $(this).data('href'),
+            success: function (data) {
+                $(window).trigger('hashchange');
+                activeM();
+                M.toast({html: data.message});
             }
         });
     });

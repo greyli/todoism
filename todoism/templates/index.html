@@ -24,9 +24,9 @@
     var login_url = "{{ url_for('auth.login') }}";
     var register_url = "{{ url_for('auth.register') }}";
     var logout_url = "{{ url_for('auth.logout') }}";
-    var default_error_message = "Oops, something was wrong!";
-    var empty_body_error_message = "Your todo was empty!";
-    var login_error_message = "Empty username or password!";
+    var default_error_message = "{{ _('Oops, something was wrong!') }}";
+    var empty_body_error_message = "{{ _('Your todo was empty!') }}";
+    var login_error_message = "{{ _('Empty username or password!') }}";
 </script>
 </body>
 </html>

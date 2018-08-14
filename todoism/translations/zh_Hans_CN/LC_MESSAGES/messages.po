@@ -1,0 +1,170 @@
+# Chinese (Simplified, China) translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-07-12 21:25+0800\n"
+"PO-Revision-Date: 2018-05-12 22:20+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans_CN\n"
+"Language-Team: zh_Hans_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: todoism/__init__.py:62
+msgid "Bad Request"
+msgstr "请求无效"
+
+#: todoism/__init__.py:66
+msgid "Forbidden"
+msgstr "禁止访问"
+
+#: todoism/__init__.py:76
+msgid "Page Not Found"
+msgstr "页面未找到"
+
+#: todoism/__init__.py:92
+msgid "Server Error"
+msgstr "服务器出错"
+
+#: todoism/extensions.py:14
+msgid "Please login to access this page."
+msgstr "请登录后访问这个页面。"
+
+#: todoism/blueprints/auth.py:28
+msgid "Login success."
+msgstr "登录成功。"
+
+#: todoism/blueprints/auth.py:29
+msgid "Invalid username or password."
+msgstr "无效的用户名或密码。"
+
+#: todoism/blueprints/auth.py:37
+msgid "Logout success."
+msgstr "已退出。"
+
+#: todoism/blueprints/auth.py:53
+msgid "Witness something truly majestic"
+msgstr "看见真正雄伟的景色"
+
+#: todoism/blueprints/auth.py:54
+msgid "Help a complete stranger"
+msgstr "帮助一位完全陌生的人"
+
+#: todoism/blueprints/auth.py:55
+msgid "Drive a motorcycle on the Great Wall of China"
+msgstr "在长城上骑摩托"
+
+#: todoism/blueprints/auth.py:56
+msgid "Sit on the Great Egyptian Pyramids"
+msgstr "坐在金字塔上"
+
+#: todoism/blueprints/auth.py:60
+msgid "Generate success."
+msgstr "已生成。"
+
+#: todoism/blueprints/home.py:23
+msgid "Invalid locale."
+msgstr "无效的区域选项。"
+
+#: todoism/blueprints/home.py:25
+msgid "Setting updated."
+msgstr "设置已更新。"
+
+#: todoism/blueprints/todo.py:29
+msgid "All clear!"
+msgstr "一切都清理干净了！"
+
+#: todoism/blueprints/todo.py:37 todoism/blueprints/todo.py:53
+msgid "Invalid item body."
+msgstr "无效的条目正文。"
+
+#: todoism/blueprints/todo.py:49 todoism/blueprints/todo.py:64
+#: todoism/blueprints/todo.py:76
+msgid "Permission denied."
+msgstr "权限错误。"
+
+#: todoism/blueprints/todo.py:56
+msgid "Item updated."
+msgstr "条目已更新。"
+
+#: todoism/blueprints/todo.py:68
+msgid "Item toggled."
+msgstr "条目状态已更新。"
+
+#: todoism/blueprints/todo.py:80
+msgid "Item deleted."
+msgstr "条目已删除。"
+
+#: todoism/templates/_app.html:6
+msgid "What needs to be done?"
+msgstr "你要做些什么？"
+
+#: todoism/templates/_app.html:13
+msgid "All"
+msgstr "全部"
+
+#: todoism/templates/_app.html:18
+msgid "Active"
+msgstr "未完成"
+
+#: todoism/templates/_app.html:23
+msgid "Done"
+msgstr "已完成"
+
+#: todoism/templates/_intro.html:6
+msgid "We are todoist, we use todoism."
+msgstr "我们是Todo爱好者，我们使用Todoism。"
+
+#: todoism/templates/_intro.html:14
+msgid "demo.png"
+msgstr "demo_zh.png"
+
+#: todoism/templates/_intro.html:18
+msgid "Get Started"
+msgstr "开始"
+
+#: todoism/templates/_login.html:5
+msgid "Login on Todoism"
+msgstr "登录Todoism"
+
+#: todoism/templates/_login.html:13
+msgid "Get a test account"
+msgstr "获取测试账户"
+
+#: todoism/templates/_login.html:14 todoism/templates/base.html:17
+#: todoism/templates/base.html:36
+msgid "Login"
+msgstr "登录"
+
+#: todoism/templates/_login.html:17
+msgid "Toggle Password"
+msgstr "密码显示开关"
+
+#: todoism/templates/base.html:34
+msgid "Logout"
+msgstr "退出"
+
+#: todoism/templates/errors.html:22
+msgid "Back Home"
+msgstr "返回主页"
+
+#: todoism/templates/index.html:27
+msgid "Oops, something was wrong!"
+msgstr "出错了……"
+
+#: todoism/templates/index.html:28
+msgid "Your todo was empty!"
+msgstr "条目内容不能为空！"
+
+#: todoism/templates/index.html:29
+msgid "Empty username or password!"
+msgstr "用户名和密码不能为空！"
+

@@ -2,7 +2,7 @@
 
 {% block content %}
     <header class="center">
-        <h4 class="red-text">Login on Todoism</h4><br>
+        <h4 class="red-text">{{ _('Login on Todoism') }}</h4><br>
     </header>
     <div class="login-form">
         <input class="validate login-input" id="username-input" name="username" type="text" placeholder="Username"
@@ -10,9 +10,9 @@
         <input class="validate login-input" id="password-input" name="password" type="password" placeholder="Password"
                required>
         <span class="right">
-            <a class="btn grey" id="register-btn">Get a test account</a>
-            <a class="btn red" id="login-btn">Login</a>
+            <a class="btn grey" id="register-btn">{{ _('Get a test account') }}</a>
+            <a class="btn red" id="login-btn">{{ _('Login') }}</a>
         </span>
-        <p><a class="blue-text link button left" id="toggle-password">Toggle Password</a></p>&nbsp;
+        <p><a class="blue-text link button left" id="toggle-password">{{ _('Toggle Password') }}</a></p>&nbsp;
     </div>
 {% endblock %}
