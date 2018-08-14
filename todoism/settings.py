@@ -16,6 +16,7 @@ class BaseConfig:
 
     BABEL_DEFAULT_LOCALE = TODOISM_LOCALES[0]
 
+    # SERVER_NAME = 'todoism.dev:5000'  # enable subdomain support
     SECRET_KEY = os.getenv('SECRET_KEY', 'a secret string')
 
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///' + os.path.join(basedir, 'data.db'))
