@@ -323,7 +323,7 @@ $(document).ready(function () {
     }
 
 
-    $('.login-input').on('keyup', function (e) {
+    $(document).on('keyup', '.login-input', function (e) {
         if (e.which === ENTER_KEY) {
             login_user();
         }
