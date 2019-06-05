@@ -59,11 +59,11 @@ class AuthTestCase(unittest.TestCase):
         data = response.get_data(as_text=True)
         self.assertIn('Login on Todoism', data)
 
-    def get_test_account(self):
+    def test_get_test_account(self):
         response = self.client.get(url_for('auth.register'), follow_redirects=True)
         data = response.get_json()
         self.assertEqual(response.status_code, 200)
         self.assertIn('username', data)
         self.assertIn('password', data)
-        self.assertIn(data['message'], 'Generate success')
-        self.assertIsNotNone(User.query.filter(username=data['username']))
+        self.assertIn(data['message'], 'Generate success.')
+        self.assertIsNotNone(User.query.filter_by(username=data['username']))
