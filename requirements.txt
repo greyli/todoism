@@ -1,0 +1,35 @@
+babel==2.6.0
+click==6.7
+faker==0.8.17
+flask-babel==0.11.2
+flask-cors==3.0.6
+flask-login==0.4.1
+flask-sqlalchemy==2.3.2
+flask-wtf==0.14.2
+flask==1.0.2
+ipaddress==1.0.22 ; python_version == '2.7'
+itsdangerous==0.24
+jinja2==2.10
+markupsafe==1.0
+python-dateutil==2.7.3
+python-dotenv==0.10.0
+pytz==2018.5
+six==1.11.0
+sqlalchemy==1.2.10
+text-unidecode==1.2
+werkzeug==0.14.1
+wtforms==2.2.1
+# dev
+argh==0.26.2
+certifi==2018.4.16
+chardet==3.0.4
+colorama==0.3.9 ; sys_platform == 'win32'
+httpie==0.9.9
+idna==2.7
+pathtools==0.1.2
+pygments==2.2.0
+pyyaml==3.13
+requests==2.19.1
+selenium==3.13.0
+urllib3==1.23
+watchdog==0.8.3
