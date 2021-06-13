@@ -2,11 +2,11 @@
 
 *We are todoist, we use todoism.*
 
-> Example application for *[Python Web Development with Flask](http://helloflask.com/en/book)* (《[Flask Web 开发实战](http://helloflask.com/book)》).
+> Example application for *[Python Web Development with Flask](https://helloflask.com/en/book/1)* (《[Flask Web 开发实战](https://helloflask.com/book/1)》).
 
 Demo: http://todoism.helloflask.com
 
-![Screenshot](http://helloflask.com/screenshots/todoism.png)
+![Screenshot](https://helloflask.com/screenshots/todoism.png)
 
 ## Installation
 
